@@ -72,6 +72,7 @@
 - [ ] **現金**：每人建議帶 €300-€500 現金 (小額鈔票為主)。
 - [ ] **App**：[ÖBB](https://www.oebb.at/en/), [Google Maps](https://www.google.com/maps), [Bolt](https://bolt.eu/).
 - [ ] **打包**：再次確認 **[行李打包清單 (packing_checklist.md)](file:///c:/python-training/travel/packing_checklist.md)**。
+- [ ] **預約**：確認所有 **[預約與票券 (reservations.md)](file:///c:/python-training/travel/reservations.md)** 都已存檔。
 
 ---
 
