@@ -17,10 +17,10 @@ __pycache__/
 Thumbs.db
 
 # 不需要上傳的檔案
-*.md
+
 !README.md
 !DEPLOY.md
-!day_*.md
+
 !final_itinerary.md
 !survival_guide.md
 !asian_food_guide.md
@@ -37,5 +37,5 @@ Thumbs.db
 maps/
 
 # 個人資訊（如果有的話）
-CONTEXT.md
-mission.md
+
+
