@@ -434,19 +434,7 @@ CSS_STYLES = """
     }
 </style>
 """
-    
-    /* Checklist */
-    .checkbox-item {
-        background: white;
-        padding: 10px;
-        border-bottom: 1px solid #eee;
-        display: flex;
-        align-items: center;
-    }
-    .checkbox-item label { margin-left: 10px; width: 100%; }
-    input[type="checkbox"] { width: 20px; height: 20px; }
-</style>
-"""
+
 
 # --- Javascript (Embedded for Interaction) ---
 JS_SCRIPTS = """
