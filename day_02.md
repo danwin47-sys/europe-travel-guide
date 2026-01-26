@@ -14,35 +14,37 @@ Salzburg → Berchtesgaden → Königssee → DM 掃貨 → Salzburg
 
 ## ⏰ 時間表
 
-| 時間        | 活動               | 地點              |
-| :---------- | :----------------- | :---------------- |
-| 09:00       | 出發               | Salzburg Hbf 廣場 |
-| 09:15       | 搭 Bus 840         | Watzmann Express  |
-| 10:05       | 轉乘               | Berchtesgaden Hbf |
-| 10:30       | 抵達國王湖         | Königssee         |
-| 11:00-14:00 | 搭船 + 紅蔥頭教堂  | St. Bartholomä    |
-| 14:30-16:00 | DM 藥妝掃貨        | Berchtesgaden     |
-| 16:15       | 搭 Bus 840 回程    | → Salzburg        |
-| 17:05       | 抵達 Salzburg Hbf  | 自由活動/休息     |
-| 18:30       | 晚餐：傳統啤酒餐廳 | Augustiner Bräu   |
-| 20:30       | 薩爾茲堡夜巡       | 舊城區散步        |
+| 時間        | 活動                    | 地點               |
+| :---------- | :---------------------- | :----------------- |
+| 09:00       | 出發                    | Salzburg Hbf 廣場  |
+| 08:15       | 搭 Bus 840              | Salzburg Hbf       |
+| 09:05       | 抵達貝希特斯加登        | Hbf 轉 Bus 841     |
+| **09:45**   | **國王湖遊船 (首班)**   | Königssee Seelände | **2月冬季時刻表確認** |
+| 10:20       | 抵達 St. Bartholomä     | 洋蔥教堂           | 散步拍照              |
+| 11:30       | 返程                    | 搭船回碼頭         |                       |
+| 12:00       | 耶拿峰纜車 (JennerBahn) | 纜車站             | **09:30-16:30**       |
+| 14:30-16:00 | DM 藥妝掃貨             | Berchtesgaden      |
+| 16:15       | 搭 Bus 840 回程         | → Salzburg         |
+| 17:05       | 抵達 Salzburg Hbf       | 自由活動/休息      |
+| 18:30       | 晚餐：傳統啤酒餐廳      | Augustiner Bräu    |
+| 20:30       | 薩爾茲堡夜巡            | 舊城區散步         |
 
 ## 🚶 詳細步驟
 
-### 1. [09:00] Salzburg Hbf 車站前廣場
-- 走到 `Südtiroler Platz` (車站正門廣場)
-- 尋找 **Forum 1 購物中心** 與 **麥當勞** 之間的 **J 月台 (Stand J)**
-- **確認車號**：**Bus 840 (Watzmann Express)**
-- **注意**：建議提前 10-15 分鐘到場排隊，此車次熱門且位置有限。
+### 1. [08:15] 出發前往貝希特斯加登 (Berchtesgaden)
+- **交通**：搭乘 **Bus 840 (Watzmann Express)**。
+- **上車地點**：Salzburg Hbf (Forum 1 出口側的 **J 月台**, 麥當勞對面)。
+- **路線**：直達 **Berchtesgaden Hbf** (約 50 分鐘)。
+- **直達注意**：大部分 840 班次會直接開往 **Königssee/Jennerbahn** (不需換車，車程約 56 分鐘)。
+  - 上車時請看車頭顯示或問司機 "Direct to Königssee?"
+  - 若該班次只到 Berchtesgaden Hbf，則需在總站換乘 Bus 841 或 842 (接駁很順，不用擔心)。
+- **票價**：上車向司機買 **RVO Day Ticket (Tagesticket)** 約 €12/人 (包含來回與當地公車)。
 
 > [!TIP]
 > **飯店福利**：您的薩爾茲堡住宿有送 **3 張交通卡**（住 3 晚送 3 張）！
 > - ✅ 涵蓋：薩爾茲堡市區所有公車、電車
 > - ❌ 不涵蓋：Bus 840（這是德國境內巴士，需另外買票）
 > - 💡 省錢：市區交通完全免費，省下約 €15-20
-
-### 2. [09:15] 上車買票
-- 跟司機說：「**One Day Ticket RVO (Tagesticket), please.**」
 
 - **價格**：約 €11/人 (目前最新報價為 €10-11)
 - **付款**：**僅限現金 (Cash Only)**，司機不接受信用卡。
