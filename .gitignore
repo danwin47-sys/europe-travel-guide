@@ -29,8 +29,10 @@ Thumbs.db
 !*_detailed_plan.md
 !travel_guide_offline.html
 
-# 地圖圖片（太大，暫不上傳）
+
+# 圖片檔案（太大，不上傳）
 *_map.png
+*.jpg
 maps/
 
 # 個人資訊（如果有的話）
