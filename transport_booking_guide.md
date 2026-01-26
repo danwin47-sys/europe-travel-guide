@@ -110,18 +110,29 @@
 - S7 S-Bahn：€4.4 (25 分鐘)
 
 ### 薩爾茲堡 (Salzburg)
-**推薦**：Salzburg Card
+
+> [!IMPORTANT]
+> **飯店福利**：您的住宿包含 **3 張免費交通卡**（住 3 晚送 3 張）！
+> - ✅ 涵蓋薩爾茲堡市區所有公車、電車
+> - 💰 省下約 €15-20 的交通費
+> - 📝 **結論**：您**不需要**為了交通而買 Salzburg Card
+
+**推薦**：Salzburg Card（僅為景點門票考量）
 - **價格**：
   - 24h：€31
   - 48h：€40
   - 72h：€47
 - **涵蓋**：
   - 所有博物館、城堡
-  - 市區交通
+  - 市區交通（但您已有飯店送的卡）
   - 部分纜車折扣
 - **購買**：
   - 火車站旅遊中心
   - 線上：[Salzburg Card](https://www.salzburg.info/en/hotels-offers/salzburg-card)
+
+**建議**：
+- 如果 Day 04 要去鹽礦 + 溫特斯山，買 24h Salzburg Card 划算
+- 如果只去市區景點，可能不需要買（單獨買門票即可）
 
 ### 布達佩斯 (Budapest)
 **推薦**：72-Hour Travelcard
