@@ -3,6 +3,13 @@
 ## 📍 今日路線 (早起拼命版)
 Salzburg → Bad Ischl → Hallstatt → Bad Ischl → St. Wolfgang → Salzburg
 
+> [!TIP]
+> **🎫 交通票券今日攻略 (雙人密技)**
+> - **第一棒 (08:15)**：✅ **飯店交通卡** (搭 Bus 150 到 Bad Ischl 免費)
+> - **第二棒 (09:45後)**：💰 **Freizeit-Ticket OÖ** (雙人票 €26.5，兩人共用一張)
+> - **渡輪**：💰 現金 €8/人
+> - **備註**：這是最強省錢組合！Freizeit-Ticket 請在 OÖVV App 或車站買。
+
 > [!NOTE]
 > **為什麼要先去最遠的哈修塔特？ (導遊戰術分析)**
 > 這並非繞路，而是為了**追逐冬季珍貴的光線**：
