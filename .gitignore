@@ -20,6 +20,7 @@ Thumbs.db
 *.md
 !README.md
 !DEPLOY.md
+!day_*.md
 generate_travel_app.py
 travel_guide_offline.html
 
