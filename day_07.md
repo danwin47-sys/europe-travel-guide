@@ -32,9 +32,14 @@
 - **交通卡**：利用車上 WiFi 下載 **BudapestGO App** 並購買 **72h Travelcard** (5,500 HUF)。
   - **重要**：如果您要搭 **100E 機場巴士**，Travelcard **不包含**！需在 App 內單獨買 "Airport Shuttle Bus Single Ticket" (2500 HUF)。
 
-### 2. [13:00] 換匯與抵達 (Money Logic)
-- **拒絕車站換匯**：Keleti 車站匯率極差。請用 ATM 領少量，或到市區 **Ibla Change** (近 Deák tér) 換錢。
-- **Check-in**：先去飯店放行李。搭地鐵 M2/M4 前往市區。
+### 2. [13:00] 抵達與入住 (Citystay Apartments)
+- **住宿地點**：**Citystay Apartments** (Somogyi Béla u. 12, 1085 Budapest)
+- **前往方式**：
+    1. 在 **Keleti pályaudvar** 下車後，跟隨 **M2 (紅線)** 地鐵指標。
+    2. 搭乘 M2 往 **Déli pu.** 方向，只需 **1 站** (約 2 分鐘)。
+    3. 在 `Blaha Lujza tér` 下車，從 **Somogyi Béla utca** 出口出站。
+    4. 出站後步行約 **200 公尺** (3 分鐘) 即達公寓。
+- **換匯建議**：Blaha 廣場周邊有多家換匯所 (如 Gold Change)，匯率比車站好很多。建議先換少量備用。
 
 ### 3. [14:30] 紐約咖啡館 (New York Café) - 挑戰極限美麗
 - **地位**：被譽為「世界最美咖啡館」，金碧輝煌如同皇宮。
