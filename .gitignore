@@ -21,8 +21,13 @@ Thumbs.db
 !README.md
 !DEPLOY.md
 !day_*.md
-generate_travel_app.py
-travel_guide_offline.html
+!final_itinerary.md
+!survival_guide.md
+!asian_food_guide.md
+!packing_checklist.md
+!phrase_guide.md
+!*_detailed_plan.md
+!travel_guide_offline.html
 
 # 地圖圖片（太大，暫不上傳）
 *_map.png
