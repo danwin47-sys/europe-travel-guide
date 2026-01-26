@@ -3,6 +3,13 @@
 ## 📍 今日路線 (早起拼命版)
 Salzburg → Bad Ischl → Hallstatt → Bad Ischl → St. Wolfgang → Salzburg
 
+> [!WARNING]
+> **⚠️ 2026 冬季停駛公告**
+> 請注意以下設施在 **2 月全線停駛**，請勿安排相關活動：
+> 1.  ❌ **SchafbergBahn (夏夫堡登山火車)**
+> 2.  ❌ **WolfgangseeSchifffahrt (沃夫岡湖遊船)**
+> *   **替代方案**：聖沃夫岡行程改為「湖濱散步 + 朝聖教堂 + 白馬飯店拍照」。
+
 > [!TIP]
 > **🎫 交通票券今日攻略 (雙人密技)**
 > - **第一棒 (08:15)**：✅ **飯店交通卡** (搭 Bus 150 到 Bad Ischl 免費)
