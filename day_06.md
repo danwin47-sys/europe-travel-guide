@@ -14,6 +14,15 @@ Innsbruck → 水晶世界 → Innsbruck → 皇宮 → 維也納
 | 16:30     | 拿行李             | Hotel Central          |
 | 19:14     | 搭火車 RJX         | 往維也納               |
 
+> [!TIP]
+> **🎫 交通票券今日攻略**
+> - **水晶世界接駁車**：出示 **Innsbruck Card** 上車 (免費)，不用另外買票。
+> - **市區公車/電車**：出示 **Innsbruck Card** (免費)。
+> - **茵斯布魯克 → 維也納 (火車)**：
+>   - **App 購票**：請提前用 **ÖBB App** 買早鳥票 (Sparschiene)。
+>   - **備註**：這段車程 4 小時且人多，強烈建議在 App 順便加購 **座位預訂 (Seat Reservation, €3)**。
+
+
 ## 🚶 詳細步驟
 
 ### 1. [09:00] 命運的分歧點 (The Morning Decision)

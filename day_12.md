@@ -13,6 +13,12 @@ Naschmarkt (跳蚤市場) → Figlmüller (炸豬排) → 霍夫堡皇宮 (Sisi 
 | 16:30 | 市區最後血拼     | Kärntner Straße     | 施華洛世奇總店         |
 | 19:00 | 告別晚宴         | Plachutta Wollzeile | 皇帝最愛的清燉牛肉     |
 
+> [!TIP]
+> **🎫 交通票券今日攻略**
+> - **市區全天**：✅ **7-Day Vienna Ticket** (包含地鐵、電車、公車)。
+> - **無需買票**：直接上車即可，遇到查票員出示手機 App 內的 QR Code。
+
+
 ## 🚶 詳細步驟
 
 ### 1. [09:00] 納許市場 (Naschmarkt) - 週六限定

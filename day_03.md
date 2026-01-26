@@ -62,6 +62,14 @@ Salzburg → Bad Ischl → Hallstatt → Bad Ischl → St. Wolfgang → Salzburg
 - **買票**：買 Bad Ischl ↔ Hallstatt 的**火車來回票**。
 - **目標**：搭上 **10:09** 的 R 列車 (往 Obertraun 方向)。
 
+> [!IMPORTANT]
+> **🎟️ 購票提醒 (Ticket Check)**
+> 此時已進入付費路段！請確保您已經：
+> 1.  開啟 **OÖVV App** 購買/啟用 **Freizeit-Ticket OÖ**。
+> 2.  或是已在車站售票機買好實體票。
+> 3.  **兩人同行請買一張 "Freizeit-Ticket OÖ" (€26.5)**，雖然它叫 Ticket 但可以涵蓋 2 位成人！不要傻傻買兩張單人票喔！
+
+
 ### 3. [10:35-13:30] 哈修塔特 (Hallstatt) - 快狠準
 - **交通接駁**：火車到站後，跟著人群衝去碼頭搭 **Stefanie 號渡輪** 進老街。
 - **特種兵路線**：
@@ -84,6 +92,20 @@ Salzburg → Bad Ischl → Hallstatt → Bad Ischl → St. Wolfgang → Salzburg
   4.  **Kaffeewerkstatt**：如果不冷，可以找這家咖啡廳坐坐。
 
 - **備案**：如果太冷或覺得無聊，可以提早搭 16:28 或 17:00 的 Bus 546 回 Bad Ischl。
+
+### 5B. [替代方案 Plan B] 聖吉爾根 (St. Gilgen) - 莫札特母親故鄉
+如果您不想去聖沃夫岡，想順路往回走，可以選擇 St. Gilgen：
+- **交通**：
+  - 在 Bad Ischl 直接搭 **Bus 150** (往 Salzburg 方向)。
+  - 在 `St. Gilgen Busbahnhof` 下車 (車程約 35 分鐘)。
+  - ✅ **好消息**：**Freizeit-Ticket OÖ** 適用範圍包含 Bus 150 到 St. Gilgen，**這段路免費**！
+- **特色**：
+  - **莫札特廣場 (Mozartplatz)**：可愛的小鎮中心，有莫札特母親出生地博物館。
+  - **市政廳 (Rathaus)**：非常漂亮的壁畫建築，也是經典地標。
+  - **湖濱漫步**：這裡的湖景比聖沃夫岡更開闊一些。
+- **優點**：位於回薩爾茲堡的順路上，巴士班次更多 (Bus 150)，不需要轉乘。
+- **回程**：直接在下車處搭 Bus 150 回薩爾茲堡 (約 50 分鐘)。
+
 
 ### 6. [17:28/18:28] 回程
 - 搭 Bus 546 到 `Strobl Busbahnhof` 轉 Bus 150 回 Salzburg。
