@@ -1,0 +1,32 @@
+# Python 相關
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 編輯器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 作業系統
+.DS_Store
+Thumbs.db
+
+# 不需要上傳的檔案
+*.md
+!README.md
+!DEPLOY.md
+generate_travel_app.py
+travel_guide_offline.html
+
+# 地圖圖片（太大，暫不上傳）
+*_map.png
+maps/
+
+# 個人資訊（如果有的話）
+CONTEXT.md
+mission.md
