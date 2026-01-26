@@ -68,13 +68,15 @@ Salzburg → Bad Ischl → Hallstatt → Bad Ischl → St. Wolfgang → Salzburg
 - 回到 Bad Ischl 後，在公車總站找 **Bus 546** (往 St. Wolfgang 方向)。
 - **發車時間**：14:45 (務必確認看板)。
 
-### 5. [15:30-17:15] 聖沃夫岡 (St. Wolfgang) - 趕在日落前
-- **抵達**：在 `St. Wolfgang im Salzkammergut Markt` 下車。
-- **重點行程**：
-    - **白馬飯店 (Weisses Rössl)**：拍經典紅色建築外觀。
-    - **朝聖教堂 (Pilgrimage Church)**：進去看著名的帕赫祭壇畫 (Pacher Altar)。
-    - **湖濱夕陽**：16:30-17:15 是魔幻時刻 (Blue Hour)，湖面最美。
-- **備案**：如果太冷，去喝杯咖啡等待回程公車。
+### 5. [15:30-17:00] 聖沃夫岡 (St. Wolfgang) - 冬季寧靜版
+- **警告**：**SchafbergBahn (登山火車)** 與 **WolfgangseeSchifffahrt (遊船)** 在 2 月**全線停駛**。
+- **替代行程 (Winter Walk)**：
+  1.  **朝聖教堂 (Pfarrkirche)**：必看著名的 Pacher 祭壇畫，金碧輝煌。
+  2.  **白馬飯店 (Im Weißen Rössl)**：在門口拍照打卡，或進去喝杯熱巧克力。
+  3.  **湖濱漫步**：沿著湖畔步道走，冬天的沃夫岡湖非常清澈寧靜，有種與世隔絕的美。
+  4.  **Kaffeewerkstatt**：如果不冷，可以找這家咖啡廳坐坐。
+
+- **備案**：如果太冷或覺得無聊，可以提早搭 16:28 或 17:00 的 Bus 546 回 Bad Ischl。
 
 ### 6. [17:28/18:28] 回程
 - 搭 Bus 546 到 `Strobl Busbahnhof` 轉 Bus 150 回 Salzburg。
