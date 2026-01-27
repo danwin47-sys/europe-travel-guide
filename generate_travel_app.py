@@ -145,6 +145,41 @@ CSS_STYLES = """
         overflow-x: auto;
         gap: 6px;
         -webkit-overflow-scrolling: touch;
+        transform: translateY(0);
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .nav-bar.hidden {
+        transform: translateY(100%);
+    }
+    
+    .nav-toggle {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background: var(--primary-color);
+        color: white;
+        border: none;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        z-index: 1001;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        transition: all 0.3s ease;
+    }
+    
+    .nav-toggle:hover {
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-toggle:active {
+        transform: scale(0.95);
     }
     
     .nav-bar::-webkit-scrollbar {
@@ -624,9 +659,14 @@ JS_SCRIPTS = """
             // Add click handler
             h2.addEventListener('click', function() {
                 this.classList.toggle('collapsed');
-                wrapper.classList.toggle('collapsed');
+        wrapper.classList.toggle('collapsed');
             });
         });
+    }
+    
+    function toggleNav() {
+        const navBar = document.querySelector('.nav-bar');
+        navBar.classList.toggle('hidden');
     }
     
     // Initialize on page load
@@ -899,6 +939,10 @@ def generate_app():
         <div id="app">
             {''.join(content_sections)}
         </div>
+        
+        <button class="nav-toggle" onclick="toggleNav()" title="切換導航欄">
+            ☰
+        </button>
         
         <nav class="nav-bar">
             {''.join(nav_items)}
