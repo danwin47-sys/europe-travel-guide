@@ -19,10 +19,10 @@ Salzburg → Berchtesgaden → Königssee → DM 掃貨 → Salzburg
 | 09:00       | 出發                    | Salzburg Hbf 廣場  |
 | 08:15       | 搭 Bus 840              | Salzburg Hbf       |
 | 09:05       | 抵達貝希特斯加登        | Hbf 轉 Bus 841     |
-| **09:45**   | **國王湖遊船 (首班)**   | Königssee Seelände | **2月冬季時刻表確認** |
-| 10:20       | 抵達 St. Bartholomä     | 洋蔥教堂           | 散步拍照              |
-| 11:30       | 返程                    | 搭船回碼頭         |                       |
-| 12:00       | 耶拿峰纜車 (JennerBahn) | 纜車站             | **09:30-16:30**       |
+| 09:45       | 國王湖遊船 (首班)       | Königssee Seelände |
+| 10:20       | 抵達 St. Bartholomä     | 洋蔥教堂           |
+| 11:30       | 返程                    | 搭船回碼頭         |
+| 12:00       | 耶拿峰纜車 (JennerBahn) | 纜車站             |
 | 14:30-16:00 | DM 藥妝掃貨             | Berchtesgaden      |
 | 16:15       | 搭 Bus 840 回程         | → Salzburg         |
 | 17:05       | 抵達 Salzburg Hbf       | 自由活動/休息      |
