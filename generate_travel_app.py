@@ -664,10 +664,22 @@ JS_SCRIPTS = """
         });
     }
     
-    function toggleNav() {
-        const navBar = document.querySelector('.nav-bar');
         navBar.classList.toggle('hidden');
     }
+    
+    function toggleOthers() {
+        const dropdown = document.getElementById('othersDropdown');
+        dropdown.classList.toggle('show');
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('othersDropdown');
+        const navDropdown = document.querySelector('.nav-dropdown');
+        if (dropdown && navDropdown && !navDropdown.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
     
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
@@ -866,7 +878,7 @@ def generate_app():
             "day_13.md": {"date": "3/1", "city": "離境"}
         }
         
-        # Create navigation HTML
+        # Create navigation HTML - Group items
         if filename.startswith('day_'):
             day_num = filename.replace('day_', '').replace('.md', '')
             meta = day_metadata.get(filename, {"date": "", "city": ""})
@@ -875,21 +887,25 @@ def generate_app():
                 <div class="day-date">{meta['date']}</div>
                 <div class="day-city">{meta['city']}</div>
             </a>'''
+            nav_items.append(('day', nav_html))
         elif display_name == "總行程表":
             nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><div class="day-num">總覽</div></a>'
-        elif display_name == "行李清單":
-            nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><div class="day-num">行李</div></a>'
-        elif display_name == "生存指南":
-            nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><div class="day-num">指南</div></a>'
-        elif display_name == "常用短句":
-            nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><div class="day-num">短句</div></a>'
-        elif display_name == "亞洲美食":
-            nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><div class="day-num">美食</div></a>'
+            nav_items.append(('overview', nav_html))
+        elif display_name in ["行李清單", "生存指南", "常用短句", "亞洲美食"]:
+            # These go into 'Others' dropdown
+            label_map = {
+                "行李清單": "行李",
+                "生存指南": "指南",
+                "常用短句": "短句",
+                "亞洲美食": "美食"
+            }
+            label = label_map.get(display_name, display_name[:2])
+            nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\'); toggleOthers();"><div class="day-num">{label}</div></a>'
+            nav_items.append(('others', nav_html))
         else:
             short_name = display_name[:2] if len(display_name)>3 else display_name
             nav_html = f'<a href="#" class="nav-item" onclick="showSection(\'{section_id}\')"><span>{short_name}</span></a>'
-        
-        nav_items.append(nav_html)
+            nav_items.append(('others', nav_html))
         html_content = parse_markdown(md_content)
         
         # Inject Map if available
@@ -919,6 +935,29 @@ def generate_app():
 
         content_sections.append(f'<div id="{section_id}" class="page-section"><div class="container">{map_html}{html_content}</div></div>')
 
+    # Group navigation items
+    overview_items = [html for cat, html in nav_items if cat == 'overview']
+    day_items = [html for cat, html in nav_items if cat == 'day']
+    other_items = [html for cat, html in nav_items if cat == 'others']
+    
+    # Build Others dropdown HTML
+    others_dropdown_html = ''
+    if other_items:
+        others_content = '\n'.join(other_items)
+        others_dropdown_html = f'''
+        <div class="nav-dropdown">
+            <a href="#" class="nav-item" onclick="toggleOthers(); return false;">
+                <div class="day-num">其他 ▼</div>
+            </a>
+            <div class="nav-dropdown-content" id="othersDropdown">
+                {others_content}
+            </div>
+        </div>
+        '''
+    
+    # Combine all nav items in order: Overview, Days, Others
+    all_nav_html = '\n'.join(overview_items + day_items) + others_dropdown_html
+    
     # Inject JSON data into JS
     final_js = JS_SCRIPTS.replace('%CITY_COLORS_JSON%', city_colors_json).replace('%CITY_NAMES_JSON%', city_names_json)
 
@@ -945,7 +984,7 @@ def generate_app():
         </button>
         
         <nav class="nav-bar">
-            {''.join(nav_items)}
+            {all_nav_html}
         </nav>
 
         {final_js}

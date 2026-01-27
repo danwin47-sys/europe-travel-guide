@@ -5350,59 +5350,93 @@
         </button>
         
         <nav class="nav-bar">
-            <a href="#" class="nav-item" onclick="showSection('final_itinerary')"><div class="day-num">總覽</div></a><a href="#" class="nav-item" onclick="showSection('day_01')">
+            <a href="#" class="nav-item" onclick="showSection('final_itinerary')"><div class="day-num">總覽</div></a>
+<a href="#" class="nav-item" onclick="showSection('day_01')">
                 <div class="day-num">D01</div>
                 <div class="day-date">2/17</div>
                 <div class="day-city">VIE→SBG</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_02')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_02')">
                 <div class="day-num">D02</div>
                 <div class="day-date">2/18</div>
                 <div class="day-city">國王湖</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_03')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_03')">
                 <div class="day-num">D03</div>
                 <div class="day-date">2/19</div>
                 <div class="day-city">雙湖</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_04')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_04')">
                 <div class="day-num">D04</div>
                 <div class="day-date">2/20</div>
                 <div class="day-city">薩堡</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_05')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_05')">
                 <div class="day-num">D05</div>
                 <div class="day-date">2/21</div>
                 <div class="day-city">→茵堡</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_06')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_06')">
                 <div class="day-num">D06</div>
                 <div class="day-date">2/22</div>
                 <div class="day-city">→維也納</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_07')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_07')">
                 <div class="day-num">D07</div>
                 <div class="day-date">2/23</div>
                 <div class="day-city">→布達</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_08')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_08')">
                 <div class="day-num">D08</div>
                 <div class="day-date">2/24</div>
                 <div class="day-city">城堡山</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_09')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_09')">
                 <div class="day-num">D09</div>
                 <div class="day-date">2/25</div>
                 <div class="day-city">溫泉</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_10')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_10')">
                 <div class="day-num">D10</div>
                 <div class="day-date">2/26</div>
                 <div class="day-city">→維也納</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_11')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_11')">
                 <div class="day-num">D11</div>
                 <div class="day-date">2/27</div>
                 <div class="day-city">美泉宮</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_12')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_12')">
                 <div class="day-num">D12</div>
                 <div class="day-date">2/28</div>
                 <div class="day-city">美景宮</div>
-            </a><a href="#" class="nav-item" onclick="showSection('day_13')">
+            </a>
+<a href="#" class="nav-item" onclick="showSection('day_13')">
                 <div class="day-num">D13</div>
                 <div class="day-date">3/1</div>
                 <div class="day-city">離境</div>
-            </a><a href="#" class="nav-item" onclick="showSection('packing_checklist')"><div class="day-num">行李</div></a><a href="#" class="nav-item" onclick="showSection('survival_guide')"><div class="day-num">指南</div></a><a href="#" class="nav-item" onclick="showSection('phrase_guide')"><div class="day-num">短句</div></a><a href="#" class="nav-item" onclick="showSection('asian_food_guide')"><div class="day-num">美食</div></a><a href="#" class="nav-item" onclick="showSection('restaurant_booking_guide')"><span>re</span></a><a href="#" class="nav-item" onclick="showSection('emergency_contacts')"><span>em</span></a><a href="#" class="nav-item" onclick="showSection('budget_guide')"><span>bu</span></a><a href="#" class="nav-item" onclick="showSection('photo_timing_guide')"><span>ph</span></a><a href="#" class="nav-item" onclick="showSection('offline_maps_guide')"><span>of</span></a><a href="#" class="nav-item" onclick="showSection('weather_backup_plans')"><span>we</span></a><a href="#" class="nav-item" onclick="showSection('luggage_storage_guide')"><span>lu</span></a><a href="#" class="nav-item" onclick="showSection('transport_booking_guide')"><span>tr</span></a><a href="#" class="nav-item" onclick="showSection('pre_departure_checklist')"><span>pr</span></a>
+            </a>
+        <div class="nav-dropdown">
+            <a href="#" class="nav-item" onclick="toggleOthers(); return false;">
+                <div class="day-num">其他 ▼</div>
+            </a>
+            <div class="nav-dropdown-content" id="othersDropdown">
+                <a href="#" class="nav-item" onclick="showSection('packing_checklist'); toggleOthers();"><div class="day-num">行李</div></a>
+<a href="#" class="nav-item" onclick="showSection('survival_guide'); toggleOthers();"><div class="day-num">指南</div></a>
+<a href="#" class="nav-item" onclick="showSection('phrase_guide'); toggleOthers();"><div class="day-num">短句</div></a>
+<a href="#" class="nav-item" onclick="showSection('asian_food_guide'); toggleOthers();"><div class="day-num">美食</div></a>
+<a href="#" class="nav-item" onclick="showSection('restaurant_booking_guide')"><span>re</span></a>
+<a href="#" class="nav-item" onclick="showSection('emergency_contacts')"><span>em</span></a>
+<a href="#" class="nav-item" onclick="showSection('budget_guide')"><span>bu</span></a>
+<a href="#" class="nav-item" onclick="showSection('photo_timing_guide')"><span>ph</span></a>
+<a href="#" class="nav-item" onclick="showSection('offline_maps_guide')"><span>of</span></a>
+<a href="#" class="nav-item" onclick="showSection('weather_backup_plans')"><span>we</span></a>
+<a href="#" class="nav-item" onclick="showSection('luggage_storage_guide')"><span>lu</span></a>
+<a href="#" class="nav-item" onclick="showSection('transport_booking_guide')"><span>tr</span></a>
+<a href="#" class="nav-item" onclick="showSection('pre_departure_checklist')"><span>pr</span></a>
+            </div>
+        </div>
+        
         </nav>
 
         
@@ -5512,10 +5546,22 @@
         });
     }
     
-    function toggleNav() {
-        const navBar = document.querySelector('.nav-bar');
         navBar.classList.toggle('hidden');
     }
+    
+    function toggleOthers() {
+        const dropdown = document.getElementById('othersDropdown');
+        dropdown.classList.toggle('show');
+    }
+    
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdown = document.getElementById('othersDropdown');
+        const navDropdown = document.querySelector('.nav-dropdown');
+        if (dropdown && navDropdown && !navDropdown.contains(event.target)) {
+            dropdown.classList.remove('show');
+        }
+    });
     
     // Initialize on page load
     document.addEventListener('DOMContentLoaded', function() {
