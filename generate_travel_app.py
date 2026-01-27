@@ -848,8 +848,25 @@ def generate_app():
     first_section = None
     city_colors_json = json.dumps(CITY_COLORS)
     city_names_json = json.dumps({k.replace('.md',''): v for k,v in name_map.items()})
-
-    for filename in FILES_TO_PROCESS:
+    
+    # Get all markdown files in the directory, but ONLY process those in name_map
+    all_md_files = [f for f in os.listdir(SOURCE_DIR) if f.endswith('.md')]
+    # Filter to only include files we want
+    md_files = [f for f in all_md_files if f in name_map]
+    
+    # Sort files: final_itinerary first, then day_XX in order, then others
+    def sort_key(filename):
+        if filename == 'final_itinerary.md':
+            return (0, 0)
+        elif filename.startswith('day_'):
+            day_num = int(filename.replace('day_', '').replace('.md', ''))
+            return (1, day_num)
+        else:
+            return (2, filename)
+    
+    md_files.sort(key=sort_key)
+    
+    for filename in md_files:
         filepath = os.path.join(SOURCE_DIR, filename)
         if not os.path.exists(filepath): continue
         
