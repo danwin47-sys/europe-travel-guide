@@ -602,7 +602,7 @@ JS_SCRIPTS = """
             // Wrap content between this h2 and next h2 (or end of section)
             const nextH2 = h2Elements[index + 1];
             const wrapper = document.createElement('div');
-            wrapper.className = 'collapsible-content';
+            wrapper.className = 'collapsible-content collapsed'; // Start collapsed
             
             let currentElement = h2.nextElementSibling;
             const elementsToWrap = [];
@@ -617,6 +617,9 @@ JS_SCRIPTS = """
             
             // Move elements into wrapper
             elementsToWrap.forEach(el => wrapper.appendChild(el));
+            
+            // Add collapsed class to h2 by default
+            h2.classList.add('collapsed');
             
             // Add click handler
             h2.addEventListener('click', function() {
