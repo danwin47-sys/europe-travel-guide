@@ -87,7 +87,7 @@ CSS_STYLES = """
     
     body {
         font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-        line-height: 1.7;
+        line-height: 1.8;
         color: var(--text-color);
         background: var(--bg-color);
         margin: 0;
@@ -95,12 +95,13 @@ CSS_STYLES = """
         padding-bottom: 80px;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        font-size: 16px;
     }
     
     .container {
-        max-width: 900px;
+        max-width: 750px;
         margin: 0 auto;
-        padding: 24px 20px;
+        padding: 32px 24px;
     }
     
     /* Sticky Top Header with Gradient */
@@ -243,45 +244,86 @@ CSS_STYLES = """
     
     h2 {
         color: var(--primary-color);
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
         border-bottom: 3px solid #e2e8f0;
-        padding-bottom: 12px;
-        margin: 36px 0 20px 0;
+        padding-bottom: 16px;
+        margin: 48px 0 24px 0;
         letter-spacing: -0.5px;
+        line-height: 1.3;
     }
     
     h3 {
         color: var(--text-color);
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 600;
         border-left: 4px solid var(--accent-color);
         padding-left: 16px;
-        margin: 28px 0 16px 0;
+        margin: 36px 0 20px 0;
+        line-height: 1.4;
     }
     
     p {
-        margin: 12px 0;
+        margin: 16px 0;
         color: var(--text-color);
+        line-height: 1.8;
     }
     
-    /* Modern Tables with Glassmorphism */
+    /* Lists */
+    ul, ol {
+        margin: 20px 0;
+        padding-left: 32px;
+    }
+    
+    li {
+        margin: 12px 0;
+        color: var(--text-color);
+        line-height: 1.8;
+    }
+    
+    li::marker {
+        color: var(--primary-color);
+        font-weight: 600;
+    }
+    
+    /* Improved readability for list items */
+    ul li, ol li {
+        padding-left: 8px;
+    }
+    
+    /* Better spacing between sections */
+    .page-section > .container > *:first-child {
+        margin-top: 0;
+    }
+    
+    /* Blockquotes for better visual hierarchy */
+    blockquote {
+        margin: 24px 0;
+        padding: 16px 20px;
+        border-left: 4px solid var(--secondary-color);
+        background: #f8fafc;
+        border-radius: 8px;
+        font-style: italic;
+        color: var(--text-light);
+    }
+    
+    /* Modern Tables with Better Readability */
     table {
         width: 100%;
         border-collapse: separate;
         border-spacing: 0;
-        margin: 24px 0;
+        margin: 28px 0;
         background: var(--card-bg);
         border-radius: var(--border-radius);
         overflow: hidden;
         box-shadow: var(--card-shadow);
-        font-size: 14px;
+        font-size: 15px;
         display: block;
         overflow-x: auto;
     }
     
     th, td {
-        padding: 14px 12px;
+        padding: 16px 14px;
         text-align: left;
         border-bottom: 1px solid #f1f5f9;
         min-width: 100px;
@@ -291,7 +333,7 @@ CSS_STYLES = """
         background: linear-gradient(135deg, #f8fafc, #f1f5f9);
         color: var(--text-color);
         font-weight: 600;
-        font-size: 13px;
+        font-size: 14px;
         text-transform: uppercase;
         letter-spacing: 0.5px;
     }
@@ -300,21 +342,26 @@ CSS_STYLES = """
         border-bottom: none;
     }
     
-    tr:hover {
-        background: #f8fafc;
+    tbody tr:nth-child(even) {
+        background: #fafbfc;
     }
     
-    /* Enhanced Alert Boxes with Icons */
+    tr:hover {
+        background: #f1f5f9;
+    }
+    
+    /* Enhanced Alert Boxes with Better Readability */
     .alert {
-        padding: 18px 20px;
+        padding: 20px 24px;
         border-radius: var(--border-radius);
-        margin: 24px 0;
+        margin: 28px 0;
         border-left: 5px solid;
         background: var(--card-bg);
         box-shadow: var(--card-shadow);
         transition: var(--transition);
         position: relative;
         overflow: hidden;
+        line-height: 1.8;
     }
     
     .alert::before {
@@ -350,6 +397,12 @@ CSS_STYLES = """
     .alert strong {
         font-weight: 700;
         color: var(--text-color);
+        display: block;
+        margin-bottom: 8px;
+    }
+    
+    .alert p {
+        margin: 8px 0;
     }
     
     /* Checkbox Items */
