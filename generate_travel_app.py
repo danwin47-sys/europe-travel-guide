@@ -528,9 +528,11 @@ def parse_markdown(text):
     lines = text.split('\n')
     in_table = False
     in_list = False
+    in_alert = False
     
-    for line in lines:
-        line = line.strip()
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
         
         if not line:
             if in_table:
@@ -539,32 +541,61 @@ def parse_markdown(text):
             if in_list:
                 html.append("</ul>")
                 in_list = False
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
+            i += 1
             continue
             
         # Headers
         if line.startswith('# '):
             pass # Skip H1 as it's used in sticky header now
         elif line.startswith('## '):
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
             html.append(f"<h2>{line[3:]}</h2>")
         elif line.startswith('### '):
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
             html.append(f"<h3>{line[4:]}</h3>")
             
-        # Alerts
+        # Alerts - Start
         elif line.startswith('> [!TIP]'):
+            if in_alert:
+                html.append('</div>')
             html.append('<div class="alert alert-tip"><strong>💡 TIP:</strong>')
+            in_alert = True
         elif line.startswith('> [!IMPORTANT]'):
+            if in_alert:
+                html.append('</div>')
             html.append('<div class="alert alert-important"><strong>🔔 IMPORTANT:</strong>')
+            in_alert = True
         elif line.startswith('> [!WARNING]') or line.startswith('> [!CAUTION]'):
+            if in_alert:
+                html.append('</div>')
             html.append('<div class="alert alert-warning"><strong>⚠️ WARNING:</strong>')
-        elif line.startswith('> '):
+            in_alert = True
+        elif line.startswith('> ') and in_alert:
+            # Continue alert content
             html.append(f"{line[2:]}<br>")
-            if line == lines[-1] or not lines[lines.index(line)+1].startswith('> '):
-                 html.append('</div>')
+        elif in_alert and not line.startswith('>'):
+            # End of alert
+            html.append('</div>')
+            in_alert = False
+            # Process this line normally (don't skip it)
+            continue  # Will reprocess this line in next iteration
 
         # Tables
         elif '|' in line and (line.startswith('|') or ' | ' in line):
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
             cols = [c.strip() for c in line.strip('|').split('|')]
-            if '---' in line: continue
+            if '---' in line:
+                i += 1
+                continue
             
             if not in_table:
                 html.append("<table><thead><tr>")
@@ -580,6 +611,9 @@ def parse_markdown(text):
         
         # Checkboxes
         elif line.startswith('- [ ] ') or line.startswith('- [x] '):
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
             checked = 'checked' if '[x]' in line else ''
             content = line[6:]
             content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', content)
@@ -587,16 +621,30 @@ def parse_markdown(text):
         
         # Lists
         elif line.startswith('- ') or line.startswith('* '):
-             if not in_list: html.append("<ul>"); in_list = True
-             content = line[2:]
-             content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', content)
-             html.append(f"<li>{content}</li>")
+            if in_alert:
+                html.append('</div>')
+                in_alert = False
+            if not in_list: html.append("<ul>"); in_list = True
+            content = line[2:]
+            content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', content)
+            html.append(f"<li>{content}</li>")
         
         else:
-            line = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line)
-            line = re.sub(r'\*(.*?)\*', r'<em>\1</em>', line)
-            html.append(f"<p>{line}</p>")
-            
+            if not in_alert:
+                line = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', line)
+                line = re.sub(r'\*(.*?)\*', r'<em>\1</em>', line)
+                html.append(f"<p>{line}</p>")
+        
+        i += 1
+    
+    # Close any remaining open tags
+    if in_alert:
+        html.append('</div>')
+    if in_table:
+        html.append("</tbody></table>")
+    if in_list:
+        html.append("</ul>")
+        
     return "\n".join(html)
 
 def generate_app():
