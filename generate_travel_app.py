@@ -251,6 +251,38 @@ CSS_STYLES = """
         margin: 48px 0 24px 0;
         letter-spacing: -0.5px;
         line-height: 1.3;
+        cursor: pointer;
+        user-select: none;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    h2:hover {
+        color: var(--secondary-color);
+    }
+    
+    h2::after {
+        content: '▼';
+        position: absolute;
+        right: 10px;
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+    
+    h2.collapsed::after {
+        transform: rotate(-90deg);
+    }
+    
+    .collapsible-content {
+        max-height: 5000px;
+        overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+        opacity: 1;
+    }
+    
+    .collapsible-content.collapsed {
+        max-height: 0;
+        opacity: 0;
     }
     
     h3 {
@@ -492,9 +524,41 @@ CSS_STYLES = """
 # --- Javascript (Embedded for Interaction) ---
 JS_SCRIPTS = """
 <script>
-    const cityColors = %CITY_COLORS_JSON%;
-    const cityNames = %CITY_NAMES_JSON%;
-
+    // City-specific colors
+    const cityColors = {
+        'final_itinerary': '#667eea',
+        'day_01': '#2c3e50',
+        'day_02': '#16a085',
+        'day_03': '#27ae60',
+        'day_04': '#2980b9',
+        'day_05': '#8e44ad',
+        'day_06': '#c0392b',
+        'day_07': '#d35400',
+        'day_08': '#f39c12',
+        'day_09': '#e74c3c',
+        'day_10': '#9b59b6',
+        'day_11': '#3498db',
+        'day_12': '#1abc9c',
+        'day_13': '#34495e'
+    };
+    
+    const cityNames = {
+        'final_itinerary': '2026 中歐冬之旅',
+        'day_01': 'Day 1 - 2/17 維也納→薩堡',
+        'day_02': 'Day 2 - 2/18 國王湖',
+        'day_03': 'Day 3 - 2/19 雙湖',
+        'day_04': 'Day 4 - 2/20 薩爾茲堡',
+        'day_05': 'Day 5 - 2/21 茵斯布魯克',
+        'day_06': 'Day 6 - 2/22 維也納',
+        'day_07': 'Day 7 - 2/23 布達佩斯',
+        'day_08': 'Day 8 - 2/24 城堡山',
+        'day_09': 'Day 9 - 2/25 溫泉',
+        'day_10': 'Day 10 - 2/26 維也納',
+        'day_11': 'Day 11 - 2/27 美泉宮',
+        'day_12': 'Day 12 - 2/28 美景宮',
+        'day_13': 'Day 13 - 3/1 離境'
+    };
+    
     function showSection(sectionId) {
         // Hide all sections
         document.querySelectorAll('.page-section').forEach(el => el.classList.remove('active'));
@@ -518,7 +582,54 @@ JS_SCRIPTS = """
         
         // Scroll to top
         window.scrollTo(0,0);
+        
+        // Initialize collapsible sections for this page
+        initCollapsible();
     }
+    
+    function initCollapsible() {
+        // Get all H2 elements in the active section
+        const activeSection = document.querySelector('.page-section.active');
+        if (!activeSection) return;
+        
+        const h2Elements = activeSection.querySelectorAll('h2');
+        
+        h2Elements.forEach((h2, index) => {
+            // Skip if already initialized
+            if (h2.hasAttribute('data-collapsible')) return;
+            h2.setAttribute('data-collapsible', 'true');
+            
+            // Wrap content between this h2 and next h2 (or end of section)
+            const nextH2 = h2Elements[index + 1];
+            const wrapper = document.createElement('div');
+            wrapper.className = 'collapsible-content';
+            
+            let currentElement = h2.nextElementSibling;
+            const elementsToWrap = [];
+            
+            while (currentElement && currentElement !== nextH2) {
+                elementsToWrap.push(currentElement);
+                currentElement = currentElement.nextElementSibling;
+            }
+            
+            // Insert wrapper after h2
+            h2.parentNode.insertBefore(wrapper, h2.nextSibling);
+            
+            // Move elements into wrapper
+            elementsToWrap.forEach(el => wrapper.appendChild(el));
+            
+            // Add click handler
+            h2.addEventListener('click', function() {
+                this.classList.toggle('collapsed');
+                wrapper.classList.toggle('collapsed');
+            });
+        });
+    }
+    
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        showSection('final_itinerary');
+    });
 </script>
 """
 
