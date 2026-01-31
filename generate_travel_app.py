@@ -22,7 +22,13 @@ FILES_TO_PROCESS = [
     "packing_checklist.md",
     "survival_guide.md",
     "phrase_guide.md",
-    "asian_food_guide.md"
+    "asian_food_guide.md",
+    # Important supplementary guides
+    "emergency_contacts.md",
+    "restaurant_booking_guide.md",
+    "budget_guide.md",
+    "pre_departure_checklist.md",
+    "luggage_storage_guide.md"
 ]
 
 # --- Color Definitions ---
@@ -44,7 +50,12 @@ CITY_COLORS = {
     "packing_checklist": "#34495e",     # Dark Grey (Checklist)
     "survival_guide": "#e74c3c",        # Red (Emergency)
     "phrase_guide": "#27ae60",          # Green (Language)
-    "asian_food_guide": "#d35400"       # Orange (Food)
+    "asian_food_guide": "#d35400",      # Orange (Food)
+    "emergency_contacts": "#c0392b",    # Dark Red (Emergency)
+    "restaurant_booking_guide": "#e67e22", # Orange (Dining)
+    "budget_guide": "#16a085",          # Teal (Money)
+    "pre_departure_checklist": "#9b59b6", # Purple (Prep)
+    "luggage_storage_guide": "#7f8c8d"  # Grey (Storage)
 }
 
 # --- CSS Styles (Enhanced Modern Design) ---
@@ -773,7 +784,12 @@ def generate_app():
         "packing_checklist.md": "行李清單",
         "survival_guide.md": "生存指南",
         "phrase_guide.md": "常用短句",
-        "asian_food_guide.md": "亞洲美食"
+        "asian_food_guide.md": "亞洲美食",
+        "emergency_contacts.md": "緊急聯絡",
+        "restaurant_booking_guide.md": "餐廳預約",
+        "budget_guide.md": "預算指南",
+        "pre_departure_checklist.md": "出發檢查",
+        "luggage_storage_guide.md": "行李寄放"
     }
 
     # Map Configuration: filename -> map image filename (not used for daily structure)
