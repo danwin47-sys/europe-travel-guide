@@ -22,17 +22,7 @@ FILES_TO_PROCESS = [
     "packing_checklist.md",
     "survival_guide.md",
     "phrase_guide.md",
-    "asian_food_guide.md",
-    # New enhancement guides
-    "restaurant_booking_guide.md",
-    "emergency_contacts.md",
-    "budget_guide.md",
-    "photo_timing_guide.md",
-    "offline_maps_guide.md",
-    "weather_backup_plans.md",
-    "luggage_storage_guide.md",
-    "transport_booking_guide.md",
-    "pre_departure_checklist.md"
+    "asian_food_guide.md"
 ]
 
 # --- Color Definitions ---
