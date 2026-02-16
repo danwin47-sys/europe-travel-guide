@@ -15,16 +15,17 @@
 | :---- | :---------------------- | :------------------- | :----------------------- |
 | 11:00 | 退房                    | Citystay Apartments  | 整理行李                 |
 | 11:40 | 搭火車 RJX 64           | Bp Keleti → Wien Hbf | 14:21 抵達               |
-| 15:00 | **Check-in**            | smartments Wien Hbf  | 放行李（不能提前寄放）   |
+| 15:00 | **Check-in**            | Smartments / Ibis    | 兩家住宿二選一           |
 | 16:00 | 聖史蒂芬大教堂          | Stephansdom          | 登南塔觀看彩色屋頂       |
 | 17:30 | **Gerstner 皇家糕點店** | Palais Todesco       | 歌劇院對面下午茶         |
 | 19:30 | 🎭 **歌劇魅影**          | Raimund Theater      | The Phantom of the Opera |
 
 > [!WARNING]
 > **行李寄放注意**
-> - smartments Wien Hauptbahnhof **不提供行李寄放服務**
-> - 14:21 抵達後，需等到 15:00 才能 Check-in
-> - 建議在車站咖啡廳休息或使用置物櫃（若行李太重）
+> **行李寄放注意**
+> - **Smartments**：**不提供**寄放，需使用車站置物櫃。
+> - **Ibis Messe**：通常可寄放，但需多搭 U1 地鐵前往 (約 15 分鐘車程)。
+> - 建議：若住 Ibis，可先去飯店放行李再出來；若住 Smartments，行理鎖車站最方便。
 
 > [!TIP]
 > **🎫 交通票券今日攻略**
@@ -59,10 +60,22 @@
   - 逛車站超市（Spar、Billa）
   - 或使用置物櫃後先去附近走走
 
-### 4. [15:00] Check-in
-- **飯店**：smartments Wien Hauptbahnhof
-- **Check-in 時間**：15:00
-- **放行李**：快速 Check-in 後放下行李
+### 4. [15:00] Check-in (住宿二選一)
+> 請根據您最終預訂的飯店前往：
+
+#### **選項 A：Smartments Wien Hauptbahnhof**
+- **位置**：維也納中央車站 (Wien Hbf) 旁，步行 2 分鐘。
+- **交通**：火車抵達後直接走去飯店。
+- **放行李**：15:00 才能 Check-in (無寄放服務)，若提早到需鎖車站置物櫃。
+
+#### **選項 B：Ibis Vienna Messe**
+- **位置**：Lassallestraße 7a, 1020 Wien (普拉特公園/展覽中心區)。
+- **交通**：
+  - 從 Wien Hbf 搭 **U1 紅線** (往 Leopoldau 方向)。
+  - 搭 4 站到 **Vorgartenstraße** 站下車。
+  - 步行 3 分鐘抵達。
+- **特點**：連鎖飯店品質穩定，離普拉特遊樂園很近。
+- **放行李**：通常可免費寄放。
 
 ### 5. [16:00] 聖史蒂芬大教堂 (Stephansdom)
 - **交通**：從 Wien Hbf 搭 U1 到 Stephansplatz（約 10 分鐘）

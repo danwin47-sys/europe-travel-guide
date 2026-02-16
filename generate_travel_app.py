@@ -6,6 +6,7 @@ SOURCE_DIR = r"c:\python-training\travel"
 OUTPUT_FILE = os.path.join(SOURCE_DIR, "travel_guide_offline.html")
 FILES_TO_PROCESS = [
     "final_itinerary.md",
+    "weather_forecast.md",  # Weather forecast for entire trip
     "day_01.md",
     "day_02.md",
     "day_03.md",
@@ -28,7 +29,8 @@ FILES_TO_PROCESS = [
     "restaurant_booking_guide.md",
     "budget_guide.md",
     "pre_departure_checklist.md",
-    "luggage_storage_guide.md"
+    "luggage_storage_guide.md",
+    "vienna_alternative_venues.md"
 ]
 
 # --- Color Definitions ---
@@ -55,7 +57,8 @@ CITY_COLORS = {
     "restaurant_booking_guide": "#e67e22", # Orange (Dining)
     "budget_guide": "#16a085",          # Teal (Money)
     "pre_departure_checklist": "#9b59b6", # Purple (Prep)
-    "luggage_storage_guide": "#7f8c8d"  # Grey (Storage)
+    "luggage_storage_guide": "#7f8c8d",  # Grey (Storage)
+    "vienna_alternative_venues": "#e67e22" # Orange (Dining/Cafe)
 }
 
 # --- CSS Styles (Enhanced Modern Design) ---
@@ -768,6 +771,7 @@ def generate_app():
     
     name_map = {
         "final_itinerary.md": "總行程表",
+        "weather_forecast.md": "天氣預報",
         "day_01.md": "Day 1 - 2/17",
         "day_02.md": "Day 2 - 2/18",
         "day_03.md": "Day 3 - 2/19",
